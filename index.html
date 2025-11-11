@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rhutam — Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="brand">Rhutam</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Rhutam</span></h1>
+          <p>Computer Engineering undergrad • Aspiring Data Scientist & ML researcher. Internship experience in NLP, MySQL, Tableau. Projects: Movie Recommender, Breast Cancer Classifier, Plant Leaf Few-Shot.</p>
+          <p class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn ghost" href="/Rhutam_Umd_Resume_updated" target="_blank">Download Résumé</a>
+          </p>
+        </div>
+        <div class="hero-img">
+          <img src="img/profile.jpg" alt="Rhutam profile" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>I am a graduate student at UMD pursuing Master's in Data Science. I have a background in Computer Engineering with hands-on experience in machine learning, NLP, and data visualization. Interned at Gamaka AI Technologies — worked on data pipelines, model prototyping, and dashboards.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section light">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-head"><span>Python</span><span>90%</span></div>
+            <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>TensorFlow / Keras</span><span>80%</span></div>
+            <div class="bar"><div class="bar-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Machine Learning</span><span>85%</span></div>
+            <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>SQL / MySQL</span><span>75%</span></div>
+            <div class="bar"><div class="bar-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Tableau / Power BI</span><span>70%</span></div>
+            <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <h3>Plant Leaf Disease — Few-Shot Multilevel Classification</h3>
+            <p>Implemented a few-shot, multilevel (species → disease) classifier using prototypical nets and EfficientNet-B0. Achieved strong generalization on limited samples.</p>
+            <p><strong>Tech:</strong> Python, PyTorch, EfficientNetB0, few-shot learning, prototypical networks</p>
+            <p class="card-links">
+              <a href="https://github.com/Rhutam03/Plant-leaf-disease-Multilevel-Classfication-using-few-shot" target="_blank">GitHub</a>
+              <a href="#" target="_blank">Paper / Report</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Movie Recommendation Model</h3>
+            <p>Collaborative filtering + content-based hybrid recommender with evaluation (RMSE, precision@k).</p>
+            <p><strong>Tech:</strong> Python, pandas, scikit-learn</p>
+            <p class="card-links"><a href="#">GitHub</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Breast Cancer Prediction</h3>
+            <p>Binary classification pipeline — preprocessing, feature selection, model comparison (Logistic, RandomForest, NN).</p>
+            <p><strong>Tech:</strong> Python, scikit-learn, TensorFlow</p>
+            <p class="card-links"><a href="#">GitHub</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section light">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Want to connect? Email: <a href="mailto:your.email@example.com">your.email@example.com</a> • <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> • <a href="https://github.com/Rhutam03" target="_blank">GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Rhutam — Built with HTML/CSS</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

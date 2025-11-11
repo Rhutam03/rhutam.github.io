@@ -1,0 +1,51 @@
+:root{
+  --bg:#0f1724; --card:#0b1220; --text:#e6eef8; --muted:#9fb0c8; --accent:#5de0c6;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  color:var(--text); background:linear-gradient(180deg,#08101a 0%,#07101b 100%);
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--container);margin:0 auto;padding:2rem;}
+.nav{position:sticky;top:0;background:rgba(3,7,12,0.55);backdrop-filter:blur(6px);z-index:50}
+.nav .container{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem}
+.brand{font-weight:700}
+.nav nav a{color:var(--muted);margin-left:1.1rem;text-decoration:none}
+.nav nav a:hover{color:var(--text)}
+
+.hero{padding:4rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:center}
+.hero h1{font-size:2.6rem;margin:0}
+.hero p{color:var(--muted)}
+.accent{color:var(--accent)}
+.hero-img img{width:100%;max-width:260px;border-radius:14px;object-fit:cover;border:3px solid rgba(255,255,255,0.04)}
+
+.section{padding:3rem 0}
+.section.light{background:rgba(255,255,255,0.02);}
+
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1rem}
+.skill{background:rgba(255,255,255,0.03);padding:0.9rem;border-radius:8px}
+.skill-head{display:flex;justify-content:space-between;font-weight:600;color:var(--text);margin-bottom:0.4rem}
+.bar{height:10px;background:rgba(255,255,255,0.04);border-radius:8px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--accent),#31caa9);transition:width 0.9s ease}
+
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.card{background:rgba(255,255,255,0.03);padding:1rem;border-radius:10px}
+.card h3{margin-top:0}
+.card-links a{margin-right:0.7rem;color:var(--accent);text-decoration:none}
+
+.footer{padding:1.2rem 0;text-align:center;color:var(--muted);background:transparent}
+
+/* responsiveness */
+@media (max-width:900px){
+  .projects-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .projects-grid{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
+  .nav .container{padding:1rem}
+  .hero h1{font-size:1.9rem}
+}
